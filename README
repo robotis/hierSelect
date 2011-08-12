@@ -1,0 +1,18 @@
+
+HierSelect JQuery Plugin
+
+Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+
+=====================================================
+
+Use:
+====
+
+Add the script to your page and call
+
+	$("#element_id").hierSelect(options, settings);
+	
+See example.html for details
+

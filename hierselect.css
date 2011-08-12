@@ -1,0 +1,6 @@
+form.standardForm select.hselect {
+	max-width: 		150px;
+}
+form.standardForm select.wide {
+	max-width: 		250px;
+}

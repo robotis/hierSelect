@@ -1,0 +1,43 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="hierselect.css">
+</head>
+<body>
+	<h2>Example 1</h2>
+	<input type="text" name="example" class="hselect" id="example"></input>
+	
+	<h2>Example preselected value</h2>
+	<input type="text" name="example2" class="hselect" id="example2"></input>
+</body>
+<div class="foot">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+	<script src="jquery.hierSelect.js" type="text/javascript"></script>
+	<script>
+		$().ready(function() {
+			$("#example").hierSelect(
+				{'1':{'name': 'level_1', 
+					'2':{'name':'level_2', 
+						 '3':'some_link'
+						}, 
+					'4':'testlink'
+					 },
+				 '5': 'another_link'
+				}
+				,{starter:'Starter value', empty_value: 0}
+			);
+			$("#example2").hierSelect(
+					{'1':{'name': 'level_1', 
+						'2':{'name':'level_2', 
+							 '3':'some_link'
+							}, 
+						'4':'testlink'
+						 },
+					 '5': 'another_link'
+					}
+					,{starter:'Starter value', empty_value: 0, selected: ['1', '2']}
+				);
+		});
+	</script>
+</div>
+</html>
